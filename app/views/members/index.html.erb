@@ -1,0 +1,7 @@
+<h1>メンバー一覧</h1>
+
+<% @members.each do |member| %>
+  <a href="/members/<%= member.id %>"><img src="<%= member.image_url %>"></a>
+  <p><%= member.family_name %><%= member.given_name %></p>
+  <hr>
+<% end %>
