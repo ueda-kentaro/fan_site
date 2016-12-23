@@ -1,0 +1,15 @@
+<h1>新規メンバー追加</h1>
+	<%= form_for @member do |f| %>
+	<p>
+	姓:<%= f.text_field :family_name %>
+	</p>
+	<p>
+	名:<%= f.text_field :given_name %>
+	</p>
+	<p>
+	画像URL:<%= f.text_field :image_url %>
+	</p>
+	<p>
+	<%= f.submit '提出'%>
+	</p>
+	<% end %>

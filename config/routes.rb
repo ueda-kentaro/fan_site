@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  get'/members' => 'members#index'
-  get'/members/:id' =>'members#show'
+  get'members' => 'members#index'
+  get 'members/new' => 'members#new'
+	post 'members' => 'members#create'
+  get'members/:id' =>'members#show'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
